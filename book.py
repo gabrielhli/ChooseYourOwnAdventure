@@ -12,7 +12,7 @@ class Book():
     def openBook(self):
         '''Loads book from provided filename'''
         try:
-            with open(filename, "r") as file:
+            with open(self.filename, "r") as file:
                 self.book = json.load(file)
         except FileNotFoundError:
             print(f"Error: File not Found: {self.filename}")
@@ -24,3 +24,8 @@ class Book():
     def getBook(self):
         return self.book
     
+    def getPage(self, pageNum):
+        if type(pageNum) != str:
+            pageNum = str(pageNum)
+
+        return self.book["pages"][pageNum]
