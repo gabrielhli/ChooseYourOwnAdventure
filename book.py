@@ -22,9 +22,11 @@ class Book():
             print(f"Error: Unexpected Error: {e}")
 
     def getBook(self):
+        """ getBook returns the book """
         return self.book
     
     def getPage(self, pageNum):
+        """ getPage gets the selected page """
         if type(pageNum) != str:
             pageNum = str(pageNum)
 

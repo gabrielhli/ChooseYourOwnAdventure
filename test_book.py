@@ -1,4 +1,5 @@
 import book
+from unittest import TestCase
 
 monaLisa = book.Book("MonaLisa.json")
 monaLisa.openBook()
