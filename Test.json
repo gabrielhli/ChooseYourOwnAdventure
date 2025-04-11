@@ -1,0 +1,24 @@
+{
+    "name": "title",
+    "author": "author",
+    "pages":{
+        "1": [
+            "some text",
+            "some more text",
+            "some even more text"
+        ],
+        "2": [
+            "some text on page 2",
+            "some more text on page 2"
+        ]
+    },
+    "options":{
+        "1": [
+            "2",
+            "4"
+        ],
+        "2": [
+            "end"
+        ]
+    }
+}
